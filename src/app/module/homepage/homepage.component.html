@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" [formGroup]="selectStateForm">
+            <mat-form-field class="">
+                <mat-label>Listing</mat-label>
+                <mat-select #name formControlName="stateSelectOption" (selectionChange)="optionChanged()">
+                    <mat-option *ngFor="let value of state" [value]="value">
+                        {{value}}
+                    </mat-option>
+                    <!-- <mat-option value="volvo">Volvo</mat-option>
+                    <mat-option value="saab">Saab</mat-option>
+                    <mat-option value="mercedes">Mercedes</mat-option>
+                    <mat-option value="audi">Audi</mat-option> -->
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="card-header">
+            <h6 class="card-title">State Listing</h6>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="card-title">States</h6>
+                        </div>
+                        <div class="card-body inner">
+                            <ul>
+                                <li *ngFor="let value of state">{{value}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="card-title">Google Map</h6>
+                        </div>
+                        <div class="card-body inner">
+                            <app-gmap></app-gmap>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-6">
+            One of three columns
+        </div>
+        <div class="col-6">
+            One of three columns
+        </div>
+    </div> -->
+</div>

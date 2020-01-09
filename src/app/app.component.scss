@@ -1,0 +1,73 @@
+.app-component{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    list-style: none;
+  }
+  
+  .nav li {
+    margin: 12px 0 12px 28px;
+  }
+  
+  .nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+  }
+  
+  .nav li a:hover {
+    color: rgba(255,255,255,0.7);
+  }
+  
+  .nav li:first-child a {
+    background: rgba(255,255,255,0.3);
+    border-radius: 2px;
+    transition: 200ms ease-in-out;
+    padding: 8px 16px 7px;
+  }
+  
+  .nav li:first-child a:hover {
+    background: rgba(255,255,255,0.5);
+    color: #fff;
+  }
+
+//   .nav li:first-child a {
+//     background: rgba(195, 179, 179, 0.3);
+//     border-radius: 2px;
+//     transition: 200ms ease-in-out;
+//     padding: 8px 16px 7px;
+//     color: black;
+//     font-weight: 800;
+//   }
+  
+//   .nav li:first-child a:hover {
+//     background: rgba(195, 179, 179, 0.3);
+//     color: rgb(150, 144, 144);
+//   }
+  
+//   @media all and (min-width: 1030px) {
+//     .header {
+//       width: 1030px;
+//       min-width: 768px;
+//     }
+//   }
+
+
+  .router-outlet{
+      overflow: auto;
+      height: calc(100% - 88px);
+      width: 100%;
+  }
+  a{
+      cursor: pointer; 
+  }
+  

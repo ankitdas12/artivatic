@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="col-12">
+        <div class="btn-container"><button (click)="setMapType('terrain')" class="btn btn-primary">Terrain</button></div>
+        <div class="btn-container"><button (click)="setMapType('satellite')" class="btn btn-danger">Satellite</button></div>
+        <div class="btn-container"><button (click)="setMapType('roadmap')" class="btn btn-warning">Road Map</button></div>
+    </div>
+    <br>
+    <div class="map" #gmap></div>
+    <br>
+    <br>
+</div>

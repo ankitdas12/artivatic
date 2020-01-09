@@ -1,0 +1,25 @@
+.card-header {
+  background-image: linear-gradient(
+    134.8deg,
+    #6a308ee3 0%,
+    #733188ed 14%,
+    #8a3679d4 36%,
+    #b03c60ed 63%,
+    #da5f59 95%,
+    #e65648 100%
+  );
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+h6.card-title {
+  margin-bottom: 0px;
+}
+
+.card-body.inner {
+  height: 530px !important;
+  overflow-x: auto !important;
+  margin-top: 0px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
