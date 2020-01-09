@@ -12,6 +12,7 @@ export class HomepageComponent implements OnInit {
   config: { heroesUrl: any; textfile: any; };
   stateCityDict = {};
   state = [];
+  cities = [];
   selectStateForm = new FormGroup({
     stateSelectOption: new FormControl()
   });
@@ -29,6 +30,7 @@ export class HomepageComponent implements OnInit {
   }
   formatData(data) {
     var stateList = [];
+    this.stateCityDict = {};
     for (let index in data) {
       this.stateCityDict[data[index]['State']] = []
       stateList.push(data[index]['State']);
@@ -41,11 +43,11 @@ export class HomepageComponent implements OnInit {
     })
     this.selectStateForm.controls['stateSelectOption'].setValue(this.state[0]);
     this.optionChanged();
-    console.log(this.stateCityDict);
+    // console.log(this.stateCityDict);
   }
-  optionChanged(){
+  optionChanged() {
     var state = this.selectStateForm.get('stateSelectOption').value;
-    console.log(this.stateCityDict[state])
+    this.cities = this.stateCityDict[state];
   }
 
 }

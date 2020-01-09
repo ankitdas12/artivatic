@@ -40,32 +40,12 @@
     color: #fff;
   }
 
-//   .nav li:first-child a {
-//     background: rgba(195, 179, 179, 0.3);
-//     border-radius: 2px;
-//     transition: 200ms ease-in-out;
-//     padding: 8px 16px 7px;
-//     color: black;
-//     font-weight: 800;
-//   }
-  
-//   .nav li:first-child a:hover {
-//     background: rgba(195, 179, 179, 0.3);
-//     color: rgb(150, 144, 144);
-//   }
-  
-//   @media all and (min-width: 1030px) {
-//     .header {
-//       width: 1030px;
-//       min-width: 768px;
-//     }
-//   }
 
 
   .router-outlet{
-      overflow: auto;
-      height: calc(100% - 88px);
-      width: 100%;
+      // overflow: auto;
+      // height: calc(100% - 88px);
+      // width: 100%;
   }
   a{
       cursor: pointer; 

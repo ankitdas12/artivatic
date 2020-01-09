@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModuleComponent } from './module/module.component';
 import { GmapComponent } from './module/gmap/gmap.component';
-import { ChartsComponent } from './module/charts/charts.component';
 import { HomepageComponent } from './module/homepage/homepage.component';
 import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,7 +16,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ModuleComponent,
     GmapComponent,
-    ChartsComponent,
     HomepageComponent
   ],
   imports: [

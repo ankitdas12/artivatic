@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: {
+    datasetApi: "https://indian-cities-api-nocbegfhqg.now.sh/",
+    gmapKey: "&key=AIzaSyDAvgRc3QtWrLsPApVtz03uqrHngi66B0w&libraries=places",
+    gmapApi: "https://maps.googleapis.com/maps/api/geocode/json?address="
+  }
 };
 
 /*
