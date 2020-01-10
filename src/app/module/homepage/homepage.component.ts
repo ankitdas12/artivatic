@@ -11,8 +11,12 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class HomepageComponent implements OnInit {
   config: { heroesUrl: any; textfile: any; };
   stateCityDict = {};
+  gmapData= {};
+
+  gmapsDataAddress= [];
   state = [];
   cities = [];
+  
   selectStateForm = new FormGroup({
     stateSelectOption: new FormControl()
   });
@@ -31,23 +35,25 @@ export class HomepageComponent implements OnInit {
   formatData(data) {
     var stateList = [];
     this.stateCityDict = {};
+    
     for (let index in data) {
-      this.stateCityDict[data[index]['State']] = []
+      this.stateCityDict[data[index]['State']] = [];
+      this.gmapData[data[index]['State']] = []
       stateList.push(data[index]['State']);
     }
     for (let index in data) {
       this.stateCityDict[data[index]['State']].push(data[index]['City'])
+      this.gmapData[data[index]['State']].push(data[index]['City']+","+data[index]['State']+",India")
     }
     this.state = stateList.filter(function (elem, index, self) {
       return index === self.indexOf(elem);
     })
     this.selectStateForm.controls['stateSelectOption'].setValue(this.state[0]);
     this.optionChanged();
-    // console.log(this.stateCityDict);
   }
   optionChanged() {
     var state = this.selectStateForm.get('stateSelectOption').value;
     this.cities = this.stateCityDict[state];
+    this.gmapsDataAddress = this.gmapData[state];
   }
-
 }

@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   api: {
     datasetApi: "https://indian-cities-api-nocbegfhqg.now.sh/",
-    gmapKey: "&key=AIzaSyDAvgRc3QtWrLsPApVtz03uqrHngi66B0w&libraries=places",
+    gmapKey: "YOUR_API_KEY",
     gmapApi: "https://maps.googleapis.com/maps/api/geocode/json?address="
   }
 };

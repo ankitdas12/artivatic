@@ -17,7 +17,7 @@ export class GlobalService {
     return this.http.get(url);
   }
   getLatLong(option) {
-    let url = this.mapsApi + option + environment.api.gmapKey;
+    let url = this.mapsApi + option + "&key=" + environment.api.gmapKey;
     return this.http.get(url);
   }
 }
